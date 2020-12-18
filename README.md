@@ -14,7 +14,7 @@ Start server at boot:
 Crontab contents:  
 ```sh
 DIR=/home/pi/light-switch-servo
-@reboot echo $(date) >> $DIR/log.txt; cd $DIR && env FLASK_APP=$DIR/server.py flask run --host=0.0.0.0 --port=5001 >> $DIR/log.txt 2>> $DIR/log.txt
+@reboot echo $(date) >> $DIR/log.txt; cd $DIR && env FLASK_APP=$DIR/server.py flask run --host=0.0.0.0 --port=5000 >> $DIR/log.txt 2>> $DIR/log.txt
 ```
 # Wii Remote
 `A` is on and `B` is off:  
