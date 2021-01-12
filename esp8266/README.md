@@ -1,8 +1,8 @@
 <!-- This is how I created the [virtual enviroment](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/#creating-a-virtual-environment): -->
 <!-- `$ python3 -m venv env` -->
 <!-- `$ pip freeze > requirements.txt` -->
-
-## Flash Micropython
+# ESP8266 Light Switch Servo
+## Flash MicroPython
 `$ git clone https://github.com/zvakanaka/light-switch-servo`  
 `$ cd light-switch-servo/esp8266`  
 `$ pip install -r requirements.txt`  
