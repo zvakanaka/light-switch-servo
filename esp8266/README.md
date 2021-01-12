@@ -24,7 +24,9 @@ sta.connect("name", "password")
 ```
 
 ## Serve the WebREPL
-You can use [this hosted version](https://zvakanaka.github.io/light-switch-servo/webrepl.html).  
+You can use [this hosted version](http://micropython.org/webrepl/).  
 Or serve it [yourself](https://micropython-on-esp8266-workshop.readthedocs.io/en/latest/basics.html#webrepl).
 
-Upload your main.py server to it.
+Upload `main.py` so it will run when booted.
+
+[Ampy](https://learn.adafruit.com/micropython-basics-load-files-and-run-code/install-ampy) can be used instead of the WebREPL to upload code over serial connection.
