@@ -22,6 +22,8 @@ sta = network.WLAN(network.STA_IF)
 sta.active(True)
 sta.connect("name", "password")
 ```
+Get the IP Address of your ESP8266 for the next step. I used:  
+`$ nmap -sn 192.168.1.0/24`
 
 ## Serve the WebREPL
 You can use [this hosted version](http://micropython.org/webrepl/).  
