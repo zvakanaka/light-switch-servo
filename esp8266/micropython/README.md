@@ -1,8 +1,8 @@
 <!-- This is how I created the [virtual enviroment](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/#creating-a-virtual-environment): -->
 <!-- `$ python3 -m venv env` -->
 <!-- `$ pip freeze > requirements.txt` -->
-
-## Flash Micropython
+# ESP8266 Light Switch Servo
+## Flash MicroPython
 `$ git clone https://github.com/zvakanaka/light-switch-servo`  
 `$ cd light-switch-servo/esp8266`  
 `$ pip install -r requirements.txt`  
@@ -22,9 +22,13 @@ sta = network.WLAN(network.STA_IF)
 sta.active(True)
 sta.connect("name", "password")
 ```
+Get the IP Address of your ESP8266 for the next step. I used:  
+`$ nmap -sn 192.168.1.0/24`
 
 ## Serve the WebREPL
-You can use [this hosted version](https://zvakanaka.github.io/light-switch-servo/webrepl.html).  
+You can use [this hosted version](http://micropython.org/webrepl/).  
 Or serve it [yourself](https://micropython-on-esp8266-workshop.readthedocs.io/en/latest/basics.html#webrepl).
 
-Upload your main.py server to it.
+Upload `main.py` so it will run when booted.
+
+[Ampy](https://learn.adafruit.com/micropython-basics-load-files-and-run-code/install-ampy) can be used instead of the WebREPL to upload code over serial connection.

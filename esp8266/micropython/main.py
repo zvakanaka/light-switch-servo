@@ -1,4 +1,4 @@
-# This is a server that runs on micropython on the ESP8266
+# This is a server that runs on MicroPython on the ESP8266
 from machine import Pin, PWM
 import time
 import socket
