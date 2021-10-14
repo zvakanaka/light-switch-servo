@@ -1,4 +1,5 @@
 # Light Switch Servo
+* [Arduino Nano](./arduino-nano)
 * [ESP8266](./esp8266)
   - [Arduino IDE (recommended)](./esp8266/arduino-ide)
   - [Micropython](./esp8266/micropython)  
